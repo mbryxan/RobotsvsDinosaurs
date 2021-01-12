@@ -15,27 +15,28 @@ namespace RobotsvsDinosaurs
 
         //constructor
 
-        
+        public Weapon(string weaponType, int weaponAttackPower)
 
-        public Weapon (string weaponType, int weaponAttackPower)
-
-        { 
-        this.weaponType = weaponType;
-        this.weaponAttackPower = weaponAttackPower;
+        {
+            this.weaponType = weaponType;
+            this.weaponAttackPower = weaponAttackPower;
 
         }
 
-        // create a List of different weapons that the Robot can choose from
+        //method can do
+        //create a List of different weapons that the Robot can choose from
+        public void RobotChooseWeapon()
+        {
 
-        
+        List<string> weapons = new List<string>();
+        weapons.Add("Mace");
+        weapons.Add("Hammer");
+        weapons.Add("Sword");
 
-        //List<string> weapons = new List<string>();
-        //weapons.Add("Mace");
-        //weapons.Add("Hammer");
-        //weapons.Add("Sword");
+        }
            
     }
 
-    //assign that weapon that is chosen to the Robot
+    
 
 }

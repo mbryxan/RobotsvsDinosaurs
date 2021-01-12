@@ -12,33 +12,33 @@ namespace RobotsvsDinosaurs
         public string dinosaurType;
         public int dinosaurHealth;
         public int dinosaurEnergy;
-        public int dinosaurAttackPower;
+        public int dinosaurWeaponAttackPower;
 
         //member constructor
-        public Dinosaur(string dinosaurType, int dinosaurHealth, int dinosaurEnergy, int dinosaurAttackPower)
+        public Dinosaur(string dinosaurType, int dinosaurHealth, int dinosaurEnergy, int dinosaurWeaponAttackPower)
 
         {
             this.dinosaurType = dinosaurType;
             this.dinosaurHealth = dinosaurHealth;
             this.dinosaurEnergy = dinosaurEnergy;
-            this.dinosaurAttackPower = dinosaurAttackPower;
+            this.dinosaurWeaponAttackPower = dinosaurWeaponAttackPower;
         }
 
         //member methods--block of a code that runs when it's called (used) -  the actions of the class
         public void AttackRobot(Robot robot)
+        //attack a Robot through a method called AttackRobot() and causes Robot health to decrease based on dinosaurWeaponAttackPower
+
+        {
+            robot.robotHealth -= dinosaurWeaponAttackPower;
+        }
+               
+        public void ReduceAttackPower(Dinosaur dinosaur)
         //attack a Robot through a method called AttackRobot() and causes dinosaurAttackPpower to be reduced by 10
-
+        //bonus point
         {
-            dinosaurAttackPower -= 10;
+            dinosaur.dinosaurHealth -=10;
         }
-
-        public int ReceiveHitFromRobot (int dinosaurHealth, int robotPowerLevel)
-        //receives a hit from the Robot through method called ReceiveHitFromRobot() and causes dinosaurHealth to be reduced
-        {
-            int newDinosaurHealth =  dinosaurHealth - robotPowerLevel;
-            return newDinosaurHealth;
-        }
-
+    
 
     }
 }

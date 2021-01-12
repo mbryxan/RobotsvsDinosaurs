@@ -38,9 +38,9 @@ namespace RobotsvsDinosaurs
 
         //Have dinosaur attack the robot (take a turn)
 
-        //Reduce the health of the robot by the hit from the amount of the dinosaurEnergy
+        //Reduce the health of the robot by the hit from the attack power of the dinosaurEnergy
 
-        //Reduce the dinosaurAttackPower of the dinosaur by -10
+        //bonus: Reduce the dinosaurAttackPower of the dinosaur by -10
 
         //If the dinosaur's health is >= 0, continue the fight
 

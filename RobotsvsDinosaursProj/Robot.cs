@@ -12,18 +12,16 @@ namespace RobotsvsDinosaurs
         public string robotName;
         public int robotHealth;
         public int robotPowerLevel;
-        public string robotWeaponType;
-        public int robotAttackPower;
+
 
         //member constructor-- set the intial values for variables
-        public Robot(string robotName, int robotHealth, int robotPowerLevel, string robotWeaponType, int robotAttackPower)
+        public Robot(string robotName, int robotHealth, int robotPowerLevel)
 
         {
             this.robotName = robotName;
             this.robotHealth = robotHealth;
             this.robotPowerLevel = robotPowerLevel;
-            this.robotWeaponType = robotWeaponType;
-            this.robotAttackPower = robotAttackPower;
+
         }
 
         //member methods--block of a code that runs when it's called (used) -  the actions of the class-- what the Robot can do
@@ -31,11 +29,15 @@ namespace RobotsvsDinosaurs
         //attack a Dinosaur through a method called AttackDinosaur () and causes robotAttackPower to be reduced by 10
 
         {
-            dinosaur.dinosaurHealth -= robotAttackPower;
+            dinosaur.dinosaurHealth -= robotPowerLevel;
+            // ?????
+        }
 
             //decrease by 10 the robotAttackPower every time it attacks
             //extra credit item       
-        }
+        
+
+}
 
         
 
@@ -44,5 +46,5 @@ namespace RobotsvsDinosaurs
 
 
         
-    }
+        
 }

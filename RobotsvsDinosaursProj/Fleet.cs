@@ -7,11 +7,36 @@ using System.Threading.Tasks;
 namespace RobotsvsDinosaurs
 {
     class Fleet
-    {
-        //robot created objects stored here
-        //member variables (Has a ....)
-        Robot robotOne = new Robot("Sam", 1000, 25, "Mace", 10);
-        Robot robotTwo = new Robot("Larry", 900, 15, "Sword", 40);
-        Robot robotThree = new Robot("John", 950, 20, "Hammer", 20);
+    {   //robot created objects here
+
+        //member variables
+        List<Robot> robots;
+
+        //member constructor
+        public Fleet()
+        {
+            //instantiate the list of robots
+            robots = new List<Robot>();
+            Robot robotOne = new Robot("Tom", 2000, 50);
+            Robot robotTwo = new Robot("John", 1500, 200);
+            Robot robotThree = new Robot("Barry", 2000, 300);
+
+            robots.Add(robotOne);
+            robots.Add(robotTwo);
+            robots.Add(robotThree);
+
+        }
+
+        //member methods
+
+        public void ChooseRobotFromHerd(Fleet fleet)
+        //
+        {
+            List<string> robotChoices = new List<string>();
+            robotChoices.Add("Tom");
+            robotChoices.Add("John");
+            robotChoices.Add("Barry");
+        }
+        
     }
 }
