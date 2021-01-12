@@ -12,7 +12,7 @@ namespace RobotsvsDinosaurs
 
         //member variables
         List<Dinosaur> dinosaurs;
-        string[] attackTypeArray;
+        //string[] attackType;
 
         //member constructor
 
