@@ -32,10 +32,11 @@ namespace RobotsvsDinosaurs
             dinosaurAttackPower -= 10;
         }
 
-        public void ReceiveHitFromRobot(Robot robot)
+        public int ReceiveHitFromRobot (int dinosaurHealth, int robotPowerLevel)
         //receives a hit from the Robot through method called ReceiveHitFromRobot() and causes dinosaurHealth to be reduced
         {
-            dinosaurHealth =  (dinosaurHealth) - (robotPowerLevel);
+            int newDinosaurHealth =  dinosaurHealth - robotPowerLevel;
+            return newDinosaurHealth;
         }
 
 
