@@ -12,41 +12,54 @@ namespace RobotsvsDinosaurs
         //member variables
 
         List<Robot> robots;
-
-
+        List<Dinosaur> dinosaurs;
 
         //and Choose a Dinosaur from the list
 
-
-
         //member constructor
-
-
+        public Battlefield()
+        {
+            
+        }
         //member method
 
         public void RunBattle()
         {
 
-
-
-
             //ROBOT MOVES:
-            //Prompt user to choose from a list of robots that we've created to do battle 
-            Console.WriteLine("Welcome to Dinos vs. Robots. Please choose which Robot you would like to use");
-           //User chooses a robot from the list of Robots
+            //Greeting
+            Console.WriteLine("Welcome to Dinos vs. Robots. Hit enter to continue and choose your selection from the list");
+            //Generate List
+            Console.WriteLine(robots = new List<Robot>());
+            //Enter
+            Console.ReadLine();
 
-        //Prompt user to choose a weapon for thee robot to use from the list
-        //User is assigned a weapon from the list for the Robot
+            //User chooses a robot from the list of Robots
+            string robotChoice = Console.ReadLine();
+            //Prompt user to choose a weapon for thee robot to use from the list
+            Console.WriteLine("Please select a weapon for the robot to use from the list");
+            //List of weapons is generated
+            Console.WriteLine();
+            //User chooses weapon
+            
+
+            //User is assigned a weapon from the list for the Robot
+
 
             //DINOSAUR MOVES:
             //Prompt user to choose from a list of dinosaurs that we've created to do battle
-            //User chooses a dinosaur from the list
+            Console.WriteLine("Please choose a dinosaur");
+           //User chooses a dinosaur from the list
+            Console.ReadLine();
             //Prompt user to choose an attack type for the dinosaur from the array
+            Console.WriteLine("Please choose an attack type for the dinosaur");
             //User is assigned an attack type for the dinosaur
 
             //BATTLE
             //Robot's Turn
             //Have robot attack the dinosaur (take a turn)
+            AttackDinosaur();
+         
             //Reduce the health of the dinosaur by the hit from the amount of the robotWeaponAttackPower
             //Reduce the robotAttackPower of the robot by -10 (bonus)
             //Print out "The robot hit the dinosaur and reduces the dinosaur's health by " ". The dinosaur now has " " health. The robot also has its attack power reduced by " ".
